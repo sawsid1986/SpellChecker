@@ -8,10 +8,12 @@ namespace SpellChecker.Repositories
     public class SpellCheckRespository : ISpellCheckerRepository
     {
         private readonly IVocabulary _vocabulary;
+        private readonly IFindWordSuggestion _findWordSuggestion;
 
-        public SpellCheckRespository(IVocabulary vocabulary, ITextReader reader)
+        public SpellCheckRespository(IVocabulary vocabulary, ITextReader reader, IFindWordSuggestion findWordSuggestion)
         {
             _vocabulary = vocabulary;
+            _findWordSuggestion = findWordSuggestion;
             BuildVocabularyUsingText(reader);
         }
 
@@ -24,6 +26,11 @@ namespace SpellChecker.Repositories
         public bool IsSpellingCorrect(string word)
         {
             return _vocabulary.Search(word);
+        }
+
+        public string[] FindWordSuggestions(string word)
+        {
+            return _findWordSuggestion.FindSuggestions(word);
         }
     }
 }

@@ -30,6 +30,7 @@ namespace SpellCheckerWebApi
             services.AddSingleton<ITextReader, FileTextReader>();
             services.AddSingleton<IVocabulary, VocabularyTree>();
             services.AddSingleton<ISpellCheckerRepository, SpellCheckRespository>();
+            services.AddSingleton<IFindWordSuggestion, FindWordSuggestionsUptoDistanceTwo>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

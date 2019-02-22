@@ -7,5 +7,6 @@ namespace SpellChecker.Repositories
     public interface ISpellCheckerRepository
     {
         bool IsSpellingCorrect(string word);
+        string[] FindWordSuggestions(string word);
     }
 }
