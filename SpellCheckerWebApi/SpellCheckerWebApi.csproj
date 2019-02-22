@@ -11,6 +11,13 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
     <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SpellChecker.Core\SpellChecker.Core.csproj" />
+    <ProjectReference Include="..\SpellChecker.Repositories\SpellChecker.Repositories.csproj" />
+    <ProjectReference Include="..\SpellChecker.Utilities\SpellChecker.Utilities.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SpellChecker.Core\SpellChecker.Core.csproj" />
+    <ProjectReference Include="..\SpellChecker.Utilities\SpellChecker.Utilities.csproj" />
+  </ItemGroup>
+
+</Project>

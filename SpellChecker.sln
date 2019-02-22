@@ -3,7 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.271
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpellCheckerWebApi", "SpellCheckerWebApi\SpellCheckerWebApi.csproj", "{2A0567CF-C7F8-46DB-87BB-A9877DA6D3CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SpellCheckerWebApi", "SpellCheckerWebApi\SpellCheckerWebApi.csproj", "{2A0567CF-C7F8-46DB-87BB-A9877DA6D3CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpellChecker.Utilities", "SpellChecker.Utilities\SpellChecker.Utilities.csproj", "{B07FCCAA-8E3D-4C79-885E-DE5F3CCA6226}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpellChecker.Core", "SpellChecker.Core\SpellChecker.Core.csproj", "{2A791E5B-5FC6-4FE0-944B-183CC62BC5BD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpellChecker.Core.UnitTests", "SpellChecker.Core.UnitTests\SpellChecker.Core.UnitTests.csproj", "{01ACACC6-52EA-4BA6-A19A-6B38B14C54C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpellChecker.Utilities.UnitTests", "SpellChecker.Utilities.UnitTests\SpellChecker.Utilities.UnitTests.csproj", "{FEB3D4F0-A3A1-410E-8F7F-A0ADF9FF8405}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpellChecker.Repositories", "SpellChecker.Repositories\SpellChecker.Repositories.csproj", "{F1C54B26-DF0A-4306-87B4-65BEE511EB26}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +25,26 @@ Global
 		{2A0567CF-C7F8-46DB-87BB-A9877DA6D3CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2A0567CF-C7F8-46DB-87BB-A9877DA6D3CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2A0567CF-C7F8-46DB-87BB-A9877DA6D3CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B07FCCAA-8E3D-4C79-885E-DE5F3CCA6226}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B07FCCAA-8E3D-4C79-885E-DE5F3CCA6226}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B07FCCAA-8E3D-4C79-885E-DE5F3CCA6226}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B07FCCAA-8E3D-4C79-885E-DE5F3CCA6226}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A791E5B-5FC6-4FE0-944B-183CC62BC5BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A791E5B-5FC6-4FE0-944B-183CC62BC5BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A791E5B-5FC6-4FE0-944B-183CC62BC5BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A791E5B-5FC6-4FE0-944B-183CC62BC5BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01ACACC6-52EA-4BA6-A19A-6B38B14C54C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01ACACC6-52EA-4BA6-A19A-6B38B14C54C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01ACACC6-52EA-4BA6-A19A-6B38B14C54C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01ACACC6-52EA-4BA6-A19A-6B38B14C54C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEB3D4F0-A3A1-410E-8F7F-A0ADF9FF8405}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEB3D4F0-A3A1-410E-8F7F-A0ADF9FF8405}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEB3D4F0-A3A1-410E-8F7F-A0ADF9FF8405}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEB3D4F0-A3A1-410E-8F7F-A0ADF9FF8405}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1C54B26-DF0A-4306-87B4-65BEE511EB26}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1C54B26-DF0A-4306-87B4-65BEE511EB26}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1C54B26-DF0A-4306-87B4-65BEE511EB26}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1C54B26-DF0A-4306-87B4-65BEE511EB26}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
