@@ -26,6 +26,7 @@ namespace SpellCheckerWebApi
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors();
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
             services.AddSingleton<ITextReader, FileTextReader>();
             services.AddSingleton<IVocabulary, VocabularyTree>();
@@ -40,7 +41,7 @@ namespace SpellCheckerWebApi
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            app.UseCors(builder => builder.AllowAnyHeader().AllowAnyMethod().AllowAnyOrigin());
             app.UseMvc();
         }
     }

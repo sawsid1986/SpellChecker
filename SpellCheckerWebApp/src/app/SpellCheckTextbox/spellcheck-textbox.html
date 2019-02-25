@@ -1,0 +1,6 @@
+<div>  
+  <h4>Enter text here: <input #box [class.has-error]="!isValid" (keyup.space)="onEnter(box.value)" (keyup.enter)="onEnter(box.value)" (blur)="onEnter(box.value)" [value]="text"></h4>
+  <div *ngIf="!isValid">
+    <suggestion-list [word]="text" (eventClick)="handleEventClicked($event)"></suggestion-list>
+  </div>
+</div>

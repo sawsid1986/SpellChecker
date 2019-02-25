@@ -1,0 +1,4 @@
+<div *ngIf="suggestedWords">
+  <div>Suggestions for {{word}}</div>
+  <a *ngFor="let suggestedWord of suggestedWords"  (click)="handleClickMe(suggestedWord)">{{suggestedWord}}</a>
+</div>
